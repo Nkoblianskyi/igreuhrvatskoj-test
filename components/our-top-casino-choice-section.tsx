@@ -16,7 +16,7 @@ export function OurTopCasinoChoiceSection() {
     <section className="py-16 md:py-20 bg-black/80 text-white">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-10 text-center">Our Top Casino Pick</h2>
-        <div className="flex justify-center">
+        <div className="justify-center max-w-[1200px] mx-auto px-4">
           {/* Render the CasinoCard for the top site, ensuring it gets the rank 1 styling */}
           <CasinoCard site={topSite} rank={1} />
         </div>
