@@ -75,11 +75,11 @@ export function CasinoRankings() {
               >
                 <CardContent className="h-full flex items-center">
                 {casino.rank === 1 && (
-                  <div className="absolute -top-1 -left-1 z-10 flex flex-row gap-1">
-                    <Badge className="bg-yellow-400 text-black font-black text-xs px-3 py-1 rounded-sm whitespace-nowrap">
+                  <div className="absolute top-0 left-0 z-10 flex flex-row gap-0">
+                    <Badge className="bg-yellow-400 text-black font-black text-xs px-3 py-1 whitespace-nowrap rounded-tl-lg rounded-br-none rounded-tr-none rounded-bl-none border-0">
                       NAJBOLJE CASINO
                     </Badge>
-                    <Badge className="bg-red-600 text-white font-black text-xs px-3 py-1 rounded-sm whitespace-nowrap">
+                    <Badge className="bg-red-600 text-white font-black text-xs px-3 py-1 whitespace-nowrap rounded-br-lg rounded-tl-none rounded-tr-none rounded-bl-none border-0">
                       Ekskluzivna Ponuda
                     </Badge>
                   </div>
@@ -151,12 +151,12 @@ export function CasinoRankings() {
 
                 {/* Tablet Layout (md to lg) */}
                 <div className="hidden md:block lg:hidden w-full">
-                  <div className="flex items-center justify-between gap-4">
+                  <div className="flex items-center justify-between gap-2">
                     {/* Left Column: Rank + Casino Info */}
-                    <div className="flex items-center gap-4 flex-shrink-0" style={{ width: "180px" }}>
+                    <div className="flex items-center gap-2 flex-shrink-0" style={{ width: "140px" }}>
                       {/* Rank */}
                       <div
-                        className={`flex items-center justify-center w-10 h-10 rounded-full font-bold text-lg flex-shrink-0 ${casino.isTopChoice ? "bg-yellow-400 text-black" : "bg-red-800 text-white"
+                        className={`flex items-center justify-center w-9 h-9 rounded-full font-bold text-base flex-shrink-0 ${casino.isTopChoice ? "bg-yellow-400 text-black" : "bg-red-800 text-white"
                           } relative z-10`}
                       >
                         {casino.rank}
@@ -164,40 +164,40 @@ export function CasinoRankings() {
 
                       {/* Casino Info Column */}
                       <div className="text-center flex-1">
-                        <div className="bg-transparent rounded shadow-sm mb-2 mx-auto w-fit relative z-10 p-1">
+                        <div className="bg-transparent rounded shadow-sm mb-1 mx-auto w-fit relative z-10 p-1">
                           <img
                             src={casino.logo || "/placeholder.svg"}
                             alt={`${casino.name} logo`}
-                            className="h-14 object-contain max-w-[120px] w-auto"
+                            className="h-12 object-contain max-w-[100px] w-auto"
                           />
                         </div>
 
                         {/* Rating under logo */}
-                        <div className="flex items-center justify-center gap-2">
-                          <StarRating rating10={casino.rating} size="h-4 w-4" />
-                          <span className="text-white font-semibold text-2xl">{casino.rating.toFixed(1)}</span>
+                        <div className="flex items-center justify-center gap-1">
+                          <StarRating rating10={casino.rating} size="h-3 w-3" gapClass="gap-1" />
+                          <span className="text-white font-semibold text-lg">{casino.rating.toFixed(1)}</span>
                         </div>
                       </div>
                     </div>
 
                     {/* Center Column: Bonus */}
-                    <div className="text-center flex-shrink-0" style={{ width: "380px" }}>
-                      <div className="flex items-center justify-center gap-1 text-red-500 mb-2">
-                        <span className="text-sm font-medium">Bonus Dobrodošlice</span>
+                    <div className="text-center flex-1 px-2">
+                      <div className="flex items-center justify-center gap-1 text-red-500 mb-1">
+                        <span className="text-xs font-medium">Bonus Dobrodošlice</span>
                       </div>
-                      <div className="text-white font-bold text-lg leading-tight">{casino.bonus}</div>
+                      <div className="text-white font-bold text-sm leading-tight">{casino.bonus}</div>
                     </div>
 
                     {/* Features Column */}
                     <div
-                      className="flex flex-col gap-2 flex-1 min-h-[80px] justify-center"
-                      style={{ maxWidth: "180px" }}
+                      className="flex flex-col gap-1 flex-shrink-0 min-h-[70px] justify-center"
+                      style={{ width: "140px" }}
                     >
                       {casino.features.map((feature, index) => (
                         <Badge
                           key={index}
                           variant="outline"
-                          className="border-red-900/70 text-gray-300 bg-red-950 text-xs px-2 py-1 text-center justify-center w-full relative z-10 font-bold"
+                          className="border-red-900/70 text-gray-300 bg-red-950 text-[10px] px-1 py-0.5 text-center justify-center w-full relative z-10 font-bold"
                         >
                           {feature}
                         </Badge>
@@ -205,13 +205,13 @@ export function CasinoRankings() {
                     </div>
 
                     {/* Right Column: Button */}
-                    <div className="flex-shrink-0" style={{ width: "120px" }}>
+                    <div className="flex-shrink-0" style={{ width: "100px" }}>
                       <Button
                         style={{
                           backgroundColor: casino.isTopChoice ? "#fbbf24" : "#16a34a",
                           color: casino.isTopChoice ? "#000000" : "#ffffff",
                         }}
-                        className={`font-semibold px-2 py-3 text-xs w-full h-auto relative z-10 shadow-lg hover:opacity-90 transition-opacity pointer-events-none`}
+                        className={`font-semibold px-1 py-2 text-[10px] w-full h-auto relative z-10 shadow-lg hover:opacity-90 transition-opacity pointer-events-none`}
                         tabIndex={-1}
                       >
                         IGRAJ ODMAH
