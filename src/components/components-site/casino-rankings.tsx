@@ -124,7 +124,7 @@ export function CasinoRankings() {
                     </div>
 
                     {/* Bonus */}
-                    <div className="text-center  ml-6">
+                    <div className="text-center  px-2">
                       <div className="flex items-center justify-center gap-1 text-red-500 mb-2">
                         <span className="text-sm font-medium">Bonus Dobrodošlice</span>
                       </div>
