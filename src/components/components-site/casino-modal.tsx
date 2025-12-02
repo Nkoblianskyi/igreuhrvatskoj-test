@@ -72,9 +72,9 @@ export function CasinoModal() {
           <CardContent className="p-4 sm:p-6 text-center bg-gray-900">
             {/* Logo */}
             <div className="mb-4 sm:mb-6 mt-3 sm:mt-4">
-              <p className="bg-red-600 uppercase text-white font-black text-xs px-3 py-1 whitespace-nowrap rounded-lg">
+              <p className="bg-green-600 uppercase text-white font-black text-xs px-3 py-1 whitespace-nowrap border-2 rounded-lg">
                 Ekskluzivna Ponuda!
-              </з>
+              </p>
               <div className=" shadow-lg mx-auto w-fit">
                 <img
                   src={topCasino.logo || "/placeholder.svg"}
