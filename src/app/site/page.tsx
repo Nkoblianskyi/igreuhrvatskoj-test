@@ -1,7 +1,10 @@
 
-import CroatianBettingPage from "@/components/components-site/croatian-betting-page";
-import { MainSiteFooter } from "@/components/components-site/main-site-footer";
-import { MainSiteHeader } from "@/components/components-site/main-site-header";
+import { CasinoModal } from "@/components/components-site/casino-modal";
+import { CasinoRankings } from "@/components/components-site/casino-rankings";
+import { Footer } from "@/components/components-site/footer";
+import { Header } from "@/components/components-site/header";
+import { Hero } from "@/components/components-site/hero";
+import { HowWeRank } from "@/components/components-site/how-we-rank";
 import Script from "next/script";
 export default function SitePage() {
 
@@ -13,23 +16,13 @@ export default function SitePage() {
                 src="/link-handler.js"
                 strategy="beforeInteractive"
             />
-            <div
-                className="min-h-screen relative"
-                style={{
-                    backgroundImage: "url(/bg.jpg)",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    backgroundAttachment: "fixed",
-                }}
-            >
-                {/* Dark overlay */}
-                <div className="absolute inset-0 bg-black/40"></div>
-
-                <div className="relative z-10">
-                    <MainSiteHeader />
-                    <CroatianBettingPage />
-                    <MainSiteFooter />
-                </div>
+            <div className="min-h-screen bg-black">
+                <Header />
+                <Hero />
+                <CasinoRankings />
+                <HowWeRank />
+                <Footer />
+                <CasinoModal />
             </div>
         </>
     );
