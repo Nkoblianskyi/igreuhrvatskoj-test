@@ -72,7 +72,7 @@ export function CardCasino({ casino, onClick }: { casino: any; onClick?: (url: s
                 <div className="md:hidden w-full">
                     <div className="flex items-center mb-3">
                         {/* Logo + Rating: 40% */}
-                        <div className="flex-shrink-0" style={{ width: '40%' }}>
+                        <div className="flex-shrink-0" style={{ width: '38%' }}>
                             <div className="bg-transparent rounded shadow-sm relative z-10 p-1">
                                 <img
                                     src={casino.logo || "/placeholder.svg"}
@@ -86,7 +86,7 @@ export function CardCasino({ casino, onClick }: { casino: any; onClick?: (url: s
                             </div>
                         </div>
                         {/* Bonus: 60% */}
-                        <div className="text-center" style={{ width: '60%' }}>
+                        <div className="text-center" style={{ width: '62%' }}>
                             <div className="flex items-center justify-center gap-1 text-red-500 mb-2">
                                 <span className="text-sm font-medium">Bonus Dobrodošlice</span>
                             </div>
