@@ -91,7 +91,7 @@ export function CasinoModal() {
               <div className="text-lg sm:text-xl md:text-xl font-bold mb-1">
                 <span className="text-yellow-400">100% sve do 2 000 € </span>
                 <br />
-                <span className="text-yellow-400">+ 300 Besplatnih Vrtnji</span>
+                <span className="text-yellow-400">+ 300 BV Wager x5</span>
                 <br />
                 {/* <span className="text-yellow-400"> + Tjedni Сashback 15% do 3 000 €   </span> */}
 
