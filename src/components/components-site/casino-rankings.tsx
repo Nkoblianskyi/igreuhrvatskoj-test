@@ -107,7 +107,7 @@ export function CasinoRankings() {
 
                 {/* Mobile Layout (up to md) */}
                 <div className="md:hidden w-full">
-                  <div className="flex items-center justify-between mb-3">
+                  <div className="grid grid-cols-[45%_55%] items-center justify-between mb-3">
                     {/* Logo */}
                     <div className="flex-shrink-0">
                       <div className="bg-transparent rounded shadow-sm relative z-10 p-1">
@@ -124,7 +124,7 @@ export function CasinoRankings() {
                     </div>
 
                     {/* Bonus */}
-                    <div className="text-center flex-1 ml-6">
+                    <div className="text-center  ml-6">
                       <div className="flex items-center justify-center gap-1 text-red-500 mb-2">
                         <span className="text-sm font-medium">Bonus Dobrodošlice</span>
                       </div>
