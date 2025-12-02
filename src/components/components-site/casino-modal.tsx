@@ -72,6 +72,9 @@ export function CasinoModal() {
           <CardContent className="p-4 sm:p-6 text-center bg-gray-900">
             {/* Logo */}
             <div className="mb-4 sm:mb-6 mt-3 sm:mt-4">
+              <p className="bg-red-600 uppercase text-white font-black text-xs px-3 py-1 whitespace-nowrap rounded-lg">
+                Ekskluzivna Ponuda!
+              </з>
               <div className=" shadow-lg mx-auto w-fit">
                 <img
                   src={topCasino.logo || "/placeholder.svg"}
@@ -85,11 +88,11 @@ export function CasinoModal() {
             <div className="mb-4 sm:mb-6">
               <p className="text-red-500 text-sm sm:text-base mb-2 font-bold">Bonus Dobrodošlice</p>
               <div className="text-lg sm:text-xl md:text-xl font-bold mb-1">
-                <span className="text-yellow-400">100% do 600€</span>
+                <span className="text-yellow-400">100% sve do 2 000 € </span>
                 <br />
-                <span className="text-yellow-400"> + 200 Besplatnih Vrtnji</span>
+                <span className="text-yellow-400">+ 300 Besplatnih Vrtnji</span>
                 <br />
-                <span className="text-yellow-400"> + Tjedni Сashback 15% do 3 000 €   </span>
+                {/* <span className="text-yellow-400"> + Tjedni Сashback 15% do 3 000 €   </span> */}
 
               </div>
             </div>
