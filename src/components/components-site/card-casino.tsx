@@ -42,18 +42,18 @@ export function CardCasino({ casino, onClick }: { casino: any; onClick?: (url: s
                         <Badge className="bg-yellow-400 text-black font-black text-xs px-3 py-1 whitespace-nowrap rounded-tl-lg rounded-br-none rounded-tr-none rounded-bl-none border-0">
                             NAJBOLJE CASINO
                         </Badge>
-                        <Badge className="bg-red-600 text-black font-black text-xs px-3 py-1 whitespace-nowrap rounded-br-lg rounded-tl-none rounded-tr-none rounded-bl-none border-0">
+                        <Badge className="bg-red-600 uppercase text-white font-black text-xs px-3 py-1 whitespace-nowrap rounded-br-lg rounded-tl-none rounded-tr-none rounded-bl-none border-0">
                             Ekskluzivna Ponuda!
                         </Badge>
                     </div>
                 )}
                 {casino.rank === 2 && (
-                    <Badge className="absolute top-0 left-0 bg-red-800 text-white font-black text-xs px-3 py-1 z-10 rounded-tl-lg rounded-br-lg rounded-tr-none rounded-bl-none border-0">
+                    <Badge className="absolute -top-1 -left-1 bg-red-800 text-white font-black text-xs px-3 py-1 z-10 rounded-sm">
                         PREPORUČENO
                     </Badge>
                 )}
                 {casino.rank === 3 && (
-                    <Badge className="absolute top-0 left-0 bg-red-800 text-white font-black text-xs px-3 py-1 z-10 rounded-tl-lg rounded-br-lg rounded-tr-none rounded-bl-none border-0">
+                    <Badge className="absolute -top-1 -left-1 bg-red-800 text-white font-black text-xs px-3 py-1 z-10 rounded-sm">
                         TRENDOVI
                     </Badge>
                 )}
@@ -72,7 +72,7 @@ export function CardCasino({ casino, onClick }: { casino: any; onClick?: (url: s
                 <div className="md:hidden w-full">
                     <div className="flex items-center mb-3">
                         {/* Logo + Rating: 40% */}
-                        <div className="flex-shrink-0" style={{ width: '35%' }}>
+                        <div className="flex-shrink-0" style={{ width: '40%' }}>
                             <div className="bg-transparent rounded shadow-sm relative z-10 p-1">
                                 <img
                                     src={casino.logo || "/placeholder.svg"}
@@ -86,7 +86,7 @@ export function CardCasino({ casino, onClick }: { casino: any; onClick?: (url: s
                             </div>
                         </div>
                         {/* Bonus: 60% */}
-                        <div className="text-center" style={{ width: '65%' }}>
+                        <div className="text-center" style={{ width: '60%' }}>
                             <div className="flex items-center justify-center gap-1 text-red-500 mb-2">
                                 <span className="text-sm font-medium">Bonus Dobrodošlice</span>
                             </div>
