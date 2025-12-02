@@ -80,7 +80,7 @@ export function CasinoRankings() {
                       NAJBOLJE CASINO
                     </Badge>
                     <Badge className="bg-red-600 uppercase text-white font-black text-xs px-3 py-1 whitespace-nowrap rounded-br-lg rounded-tl-none rounded-tr-none rounded-bl-none border-0">
-                      Ekskluzivna Ponuda
+                      Ekskluzivna Ponuda!
                     </Badge>
                   </div>
                 )}
