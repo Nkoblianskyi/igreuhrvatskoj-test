@@ -68,16 +68,21 @@ export function CasinoRankings() {
               className="block"
             >
               <Card
-                className={`bg-gray-900 border-gray-800 cursor-pointer transition-all duration-200 relative overflow-hidden min-h-[100px] md:min-h-[140px] lg:min-h-[160px] ${casino.isTopChoice
+                className={`bg-gray-900 border-gray-800 cursor-pointer transition-all duration-200 relative min-h-[100px] md:min-h-[140px] lg:min-h-[160px] ${casino.isTopChoice
                   ? "ring-2 ring-yellow-400 shadow-lg shadow-red-500/20 bg-gradient-to-r from-gray-900 via-red-950/30 to-gray-900 hover:ring-yellow-300"
                   : "hover:border-red-900/50 hover:shadow-lg hover:shadow-red-500/10"
                 }`}
               >
                 <CardContent className="h-full flex items-center">
-                {casino.isTopChoice && (
-                  <Badge className="absolute -top-1 -left-1 bg-yellow-400 text-black font-black text-xs px-3 py-1 z-10 rounded-sm">
-                    NAJBOLJE CASINO
-                  </Badge>
+                {casino.rank === 1 && (
+                  <div className="absolute -top-1 -left-1 z-10 flex flex-row gap-1">
+                    <Badge className="bg-yellow-400 text-black font-black text-xs px-3 py-1 rounded-sm whitespace-nowrap">
+                      NAJBOLJE CASINO
+                    </Badge>
+                    <Badge className="bg-red-600 text-white font-black text-xs px-3 py-1 rounded-sm whitespace-nowrap">
+                      Ekskluzivna Ponuda
+                    </Badge>
+                  </div>
                 )}
                 {casino.rank === 2 && (
                   <Badge className="absolute -top-1 -left-1 bg-red-800 text-white font-black text-xs px-3 py-1 z-10 rounded-sm">

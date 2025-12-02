@@ -27,6 +27,7 @@ function StarRating({ rating10, size = "h-4 w-4", gapClass = "gap-2" }: { rating
 }
 
 export function CardCasino({ casino, onClick }: { casino: any; onClick?: (url: string) => void }) {
+    console.log('CardCasino casino.rank:', casino.rank);
     return (
         <Card
             key={casino.rank}
