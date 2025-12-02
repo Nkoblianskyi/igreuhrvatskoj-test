@@ -70,11 +70,12 @@ export function CasinoModal() {
           </button>
 
           <CardContent className="p-4 sm:p-6 text-center bg-gray-900">
+            <p className="bg-green-700 uppercase text-white font-black text-sm px-3 py-1 whitespace-nowrap border-2 rounded-lg">
+              Ekskluzivna Ponuda!
+            </p>
             {/* Logo */}
             <div className="mb-4 sm:mb-6 mt-3 sm:mt-4">
-              <p className="bg-green-600 uppercase text-white font-black text-xs px-3 py-1 whitespace-nowrap border-2 rounded-lg">
-                Ekskluzivna Ponuda!
-              </p>
+
               <div className=" shadow-lg mx-auto w-fit">
                 <img
                   src={topCasino.logo || "/placeholder.svg"}
