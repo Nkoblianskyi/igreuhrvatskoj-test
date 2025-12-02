@@ -79,18 +79,18 @@ export function CasinoRankings() {
                     <Badge className="bg-yellow-400 text-black font-black text-xs px-3 py-1 whitespace-nowrap rounded-tl-lg rounded-br-none rounded-tr-none rounded-bl-none border-0">
                       NAJBOLJE CASINO
                     </Badge>
-                    <Badge className="bg-red-600 text-white font-black text-xs px-3 py-1 whitespace-nowrap rounded-br-lg rounded-tl-none rounded-tr-none rounded-bl-none border-0">
+                    <Badge className="bg-red-600 uppercase text-white font-black text-xs px-3 py-1 whitespace-nowrap rounded-br-lg rounded-tl-none rounded-tr-none rounded-bl-none border-0">
                       Ekskluzivna Ponuda
                     </Badge>
                   </div>
                 )}
                 {casino.rank === 2 && (
-                  <Badge className="absolute -top-1 -left-1 bg-red-800 text-white font-black text-xs px-3 py-1 z-10 rounded-sm">
+                  <Badge className="absolute top-0 left-0 bg-red-800 text-white font-black text-xs px-3 py-1 z-10 rounded-tl-lg rounded-br-lg rounded-tr-none rounded-bl-none border-0">
                     PREPORUČENO
                   </Badge>
                 )}
                 {casino.rank === 3 && (
-                  <Badge className="absolute -top-1 -left-1 bg-red-800 text-white font-black text-xs px-3 py-1 z-10 rounded-sm">
+                  <Badge className="absolute top-0 left-0 bg-red-800 text-white font-black text-xs px-3 py-1 z-10 rounded-tl-lg rounded-br-lg rounded-tr-none rounded-bl-none border-0">
                     TRENDOVI
                   </Badge>
                 )}
