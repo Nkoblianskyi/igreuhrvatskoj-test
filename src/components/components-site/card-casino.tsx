@@ -37,9 +37,14 @@ export function CardCasino({ casino, onClick }: { casino: any; onClick?: (url: s
         >
             <CardContent className="p-4 h-full flex items-center">
                 {casino.isTopChoice && (
-                    <Badge className="absolute -top-1 -left-1 bg-yellow-400 text-black font-black text-xs px-3 py-1 z-10 rounded-sm">
-                        NAJBOLJE CASINO
-                    </Badge>
+                    <>
+                        <Badge className="absolute -top-1 -left-1 bg-yellow-400 text-black font-black text-xs px-3 py-1 z-10 rounded-sm">
+                            NAJBOLJE CASINO
+                        </Badge>
+                        <Badge className="absolute top-6 -left-1 bg-red-600 text-white font-black text-xs px-3 py-1 z-10 rounded-sm">
+                            Ekskluzivna Ponuda
+                        </Badge>
+                    </>
                 )}
                 {casino.rank === 2 && (
                     <Badge className="absolute -top-1 -left-1 bg-red-800 text-white font-black text-xs px-3 py-1 z-10 rounded-sm">
